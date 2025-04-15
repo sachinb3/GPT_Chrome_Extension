@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background-color: #f7f7f8;
+      padding: 20px;
+      width: 300px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      color: #202123;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 4px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 8px 14px;
+      background-color: #10a37f;
+      color: white;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0e8c6e;
+    }
+
+    .success {
+      color: #10a37f;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Set OpenAI API Key</h3>
+  <p>Paste your OpenAI API key below:</p>
+  <input type="text" id="apiKey" placeholder="sk-..." />
+  <button id="saveKeyBtn">Save Key</button>
+  <div class="success" id="saveStatus" style="display: none;">Key saved securely!</div>
+  
+
+  <script src="popup.js"></script>
+</body>
+</html>
